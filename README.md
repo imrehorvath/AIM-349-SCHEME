@@ -17,7 +17,7 @@ The intention of this project is to revive that original Scheme interpreter so i
 
 ## Run the Scheme Interpreter in Common Lisp
 
-The [GNU CLISP](https://www.gnu.org/software/clisp/ "CLISP") interpreter has been used for this demo as it has nice, redline-based REPL. The Scheme code used below in the demo run, are either directly taken from the AI Memo or is a slightly modified version of the original.
+The [GNU CLISP](https://www.gnu.org/software/clisp/ "CLISP") interpreter has been used for this demo as it has some nice, `redline`-based REPL, that is optimal for interactive usage. The Scheme code used below in the demo run, are either directly taken from the AI Memo or is a slightly modified version of the original.
 
 As usual first we load the interpreter by issuing `LOAD`, then run the Toplevel calling `(SCHEME)`. When we are done, we can simply exit to the shell by calling `(QUIT)`.
 
