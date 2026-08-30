@@ -4,7 +4,7 @@ Revive the original Scheme interpreter that was published in the AIM-349 by Suss
 ## About
 
 The Scheme interpreter that was published in the [AIM-349 by Gerald Jay Sussman and Guy Lewis Steele Jr. back in December 1975](https://research.scheme.org/lambda-papers/lambda-papers-scheme-report.html "AIM-349") was wrintten in [MacLisp](https://en.wikipedia.org/wiki/Maclisp "MacLisp") an old LISP dialect that had some versions created for ITS, Multics, etc.
-The intention of this project is to revive that original Scheme interpreter so it can be tinkered with, by "porting" it to a modern and standard [Common Lisp](https://en.wikipedia.org/wiki/Common_Lisp "Common Lisp"), so it can run anywhere where Common Lisp is available.
+The intention of this project is to revive that original Scheme interpreter so it can be tinkered with, by "porting" it to a modern and standard [Common Lisp](https://en.wikipedia.org/wiki/Common_Lisp "Common Lisp") Lisp interpreter, so it can run anywhere where Common Lisp is available.
 
 ## Implementation Notes
 
