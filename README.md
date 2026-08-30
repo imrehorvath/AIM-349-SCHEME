@@ -3,7 +3,7 @@ Revive the original Scheme interpreter that was published in the AIM-349 by Suss
 
 ## About
 
-The Scheme interpreter that was published in the [AIM-349](https://research.scheme.org/lambda-papers/lambda-papers-scheme-report.html "AIM-349") by Gerald Jay Sussman and Guy Lewis Steele Jr. back in December 1975 was written in MacLisp.
+The Scheme interpreter that was published in the [AIM-349][1] by Gerald Jay Sussman and Guy Lewis Steele Jr. back in December 1975 was written in MacLisp.
 The intention of this project is to revive that original Scheme interpreter so it can be tinkered with, by "porting" it to a modern standard Common Lisp Lisp interpreter, so it can run anywhere where Common Lisp is available.
 
 ## Implementation Notes
@@ -13,13 +13,13 @@ The intention of this project is to revive that original Scheme interpreter so i
 3. The A-list representation has been changed, so it uses the usual dotted-pair, instead of the two element proper-list for the key-value association. (Environment-structure)
 4. Syntax changes like `DECLAIM` instead of `DECLARE` for the special variables followed-up.
 5. Shims for the timer-based alarmclock functionality (These were available in the ITS and Multics MacLisp versions but are absent in modern Common Lisp) and others have been added.
-6. Last but not least, the "missing" AMACROs have been re-created, based on the hints in the AIM-349. (This makes it possible to run all the Scheme examples directly, those which were published in the AIM-349)
+6. Last but not least, the "missing" AMACROs have been re-created, based on the hints in the [AIM-349][1]. (This makes it possible to run all the Scheme examples directly, those which were published in the [AIM-349][1])
 
 ## Run the Scheme Interpreter in Common Lisp
 
-The [GNU CLISP](https://www.gnu.org/software/clisp/ "CLISP") interpreter has been used for the demo below, as it has some nice, `redline`-based REPL, that is optimal for interactive usage with line-editing. The Scheme code used below in the demo run, are either directly taken from the AIM-349 or is a slightly modified version of the original.
+The [GNU CLISP](https://www.gnu.org/software/clisp/ "CLISP") interpreter has been used for the demo below, as it has some nice, `redline`-based REPL, that is optimal for interactive usage with line-editing. The Scheme code used below in the demo run, are either directly taken from the [AIM-349][1] or is a slightly modified version of the original.
 
-As usual first we load the interpreter by issuing a `LOAD`, then run the Top level calling `(SCHEME)`. When we are done, we can simply exit to the shell by calling `(QUIT)`.
+As usual, first we load the interpreter by issuing a `LOAD`, then run the Top level calling `(SCHEME)`. When we are done, we can simply exit to the shell directly by calling `(QUIT)`.
 
 *Note:* Some of the example outputs have been abbreviated for improved readability, like those with closures and continuations.
 
@@ -292,8 +292,4 @@ POSITIVE
 Bye.
 ```
 
-## License
-
-MIT License
-
-Copyright (c) 2026 Imre Horvath
+[1]: https://research.scheme.org/lambda-papers/lambda-papers-scheme-report.html
