@@ -10,16 +10,16 @@ The intention of this project is to revive that original Scheme interpreter so i
 
 1. Keep the original Scheme interpreter that was published, and apply changes only when necessary and keep them minimal.
 2. Interactive, REPL-based usage in mind for tinkering.
-3. The A-list representation has been changed, so it uses the usual dotted-pair, insted of the two element proper-list for the key-value association. (Environment-structure)
-4. Syntax changes like `DECLAIM` insted of `DECLARE` for the special variables followed-up.
+3. The A-list representation has been changed, so it uses the usual dotted-pair, instead of the two element proper-list for the key-value association. (Environment-structure)
+4. Syntax changes like `DECLAIM` instead of `DECLARE` for the special variables followed-up.
 5. Shims for the timer-based alarmclock functionality (These were available in the ITS and Multics MacLisp versions but are absent in modern Common Lisp) and others have been added.
-6. Last but not least, the "missing" AMACROs have been re-created, based on the hints in the AI Memo. (This makes it possible to run all the Scheme examples directly, those which were publised in the AI Memo)
+6. Last but not least, the "missing" AMACROs have been re-created, based on the hints in the AIM-349. (This makes it possible to run all the Scheme examples directly, those which were published in the AIM-349)
 
 ## Run the Scheme Interpreter in Common Lisp
 
-The [GNU CLISP](https://www.gnu.org/software/clisp/ "CLISP") interpreter has been used for this demo as it has some nice, `redline`-based REPL, that is optimal for interactive usage. The Scheme code used below in the demo run, are either directly taken from the AI Memo or is a slightly modified version of the original.
+The [GNU CLISP](https://www.gnu.org/software/clisp/ "CLISP") interpreter has been used for the demo below, as it has some nice, `redline`-based REPL, that is optimal for interactive usage with line-editing. The Scheme code used below in the demo run, are either directly taken from the AIM-349 or is a slightly modified version of the original.
 
-As usual first we load the interpreter by issuing `LOAD`, then run the Toplevel calling `(SCHEME)`. When we are done, we can simply exit to the shell by calling `(QUIT)`.
+As usual first we load the interpreter by issuing a `LOAD`, then run the Top level calling `(SCHEME)`. When we are done, we can simply exit to the shell by calling `(QUIT)`.
 
 *Note:* Some of the example outputs have been abbreviated for improved readability, like those with closures and continuations.
 
