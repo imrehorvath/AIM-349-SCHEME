@@ -3,8 +3,8 @@ Revive the original Scheme interpreter that was published in the AIM-349 by Suss
 
 ## About
 
-The Scheme interpreter that was published in the [AIM-349 by Gerald Jay Sussman and Guy Lewis Steele Jr. back in December 1975](https://research.scheme.org/lambda-papers/lambda-papers-scheme-report.html) was wrintten in [MacLisp](https://en.wikipedia.org/wiki/Maclisp) an old LISP dialect that had some versions created for ITS, Multics, etc.
-The intention of this project is to revive that original Scheme interpreter so it can be tinkered with, by "porting" it to a modern and standard [Common Lisp](https://en.wikipedia.org/wiki/Common_Lisp), so it can run anywhere where Common Lisp is available.
+The Scheme interpreter that was published in the [AIM-349 by Gerald Jay Sussman and Guy Lewis Steele Jr. back in December 1975](https://research.scheme.org/lambda-papers/lambda-papers-scheme-report.html "AIM-349") was wrintten in [MacLisp](https://en.wikipedia.org/wiki/Maclisp "MacLisp") an old LISP dialect that had some versions created for ITS, Multics, etc.
+The intention of this project is to revive that original Scheme interpreter so it can be tinkered with, by "porting" it to a modern and standard [Common Lisp](https://en.wikipedia.org/wiki/Common_Lisp "Common Lisp"), so it can run anywhere where Common Lisp is available.
 
 ## Implementation Notes
 
@@ -12,14 +12,14 @@ The intention of this project is to revive that original Scheme interpreter so i
 2. Interactive, REPL-based usage in mind for tinkering.
 3. The A-list representation has been changed, so it uses the usual dotted-pair, insted of the two element proper-list for the key-value association. (Environment-structure)
 4. Syntax changes like `DECLAIM` insted of `DECLARE` for the special variables followed-up.
-5. Shims for the timer-based alarmclock functionality has been added. (These were available in the ITS and Multics MacLisp versions but are absent in modern Common Lisp)
+5. Shims for the timer-based alarmclock functionality (These were available in the ITS and Multics MacLisp versions but are absent in modern Common Lisp) and others have been added.
 6. Last but not least, the "missing" AMACROs have been re-created, based on the hints in the AI Memo. (This makes it possible to run all the Scheme examples directly, those which were publised in the AI Memo)
 
 ## Run the Scheme Interpreter in Common Lisp
 
-The [GNU CLISP](https://www.gnu.org/software/clisp/) interpreter has been used for this demo as it has nice, redline-based REPL. The Scheme code used below in the demo run, are either directly taken from the AI Memo or is a slightly modified version of the original.
+The [GNU CLISP](https://www.gnu.org/software/clisp/ "CLISP") interpreter has been used for this demo as it has nice, redline-based REPL. The Scheme code used below in the demo run, are either directly taken from the AI Memo or is a slightly modified version of the original.
 
-As usual first we load the interpreter by `LOAD`, then run the Toplevel calling `(SCHEME)`. When we are done, we can simply exit to the shell by calling `(QUIT)`.
+As usual first we load the interpreter by issuing `LOAD`, then run the Toplevel calling `(SCHEME)`. When we are done, we can simply exit to the shell by calling `(QUIT)`.
 
 **Note:** Some of the example outputs have been abbreviated for improved readability, like those with closures and continuations.
 
