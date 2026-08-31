@@ -231,16 +231,16 @@ NREST
                         (LAMBDA () NIL)))))
 
 MATCH 
-==> (MATCH '(A (THV* B) (THV C) (THV C) (THV* B) (THV* E)) 
-           '(A X Y Q Q X Y Z Z X Y Q Q X Y R))
+==> (ASET 'AMATCH (MATCH '(A (THV* B) (THV C) (THV C) (THV* B) (THV* E)) 
+                         '(A X Y Q Q X Y Z Z X Y Q Q X Y R)))
 
 (((E (Z Z X Y Q Q X Y R)) (C Q) (B (X Y)))
  <continuation1>)
-==> ((CADR (SYMEVAL '*)))
+==> (ASET 'AMATCH ((CADR AMATCH)))
 
 (((E (R)) (C Z) (B (X Y Q Q X Y)))
  <continuation2>)
-==> ((CADR (SYMEVAL '*)))
+==> (ASET 'AMATCH ((CADR AMATCH)))
 
 NIL 
 ==> (DEFINE TRY!TWO!THINGS!IN!PARALLEL
